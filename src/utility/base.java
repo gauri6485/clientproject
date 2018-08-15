@@ -2,6 +2,7 @@ package utility;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
@@ -32,13 +33,13 @@ public class base {
 		
 	}
 
-	 /* @AfterTest
+	 @AfterClass
 	  public void tierDown() throws Exception { 
 		  driver.close(); 
 		  driver.quit();
 		  System.out.println("-----------------------Closed the driver---------------");
 		  
-	  }*/
+	  }
 	 
 
 }

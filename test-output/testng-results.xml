@@ -1,21 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="31753" started-at="2018-08-15T20:07:45Z" finished-at="2018-08-15T20:08:17Z">
+  <suite name="SuiteOC" duration-ms="146235" started-at="2018-08-15T22:25:13Z" finished-at="2018-08-15T22:27:39Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="31753" started-at="2018-08-15T20:07:45Z" finished-at="2018-08-15T20:08:17Z">
-      <class name="op_Package.AddProductAndValidateDollarAmount">
-        <test-method status="PASS" signature="getBrowser()[pri:0, instance:op_Package.AddProductAndValidateDollarAmount@7f416310]" name="getBrowser" is-config="true" duration-ms="6927" started-at="2018-08-15T20:07:45Z" finished-at="2018-08-15T20:07:52Z">
+    <test name="TestOC" duration-ms="146235" started-at="2018-08-15T22:25:13Z" finished-at="2018-08-15T22:27:39Z">
+      <class name="op_Package.EnterShiipingContactInfo">
+        <test-method status="PASS" signature="getBrowser()[pri:0, instance:op_Package.EnterShiipingContactInfo@140e5a13]" name="getBrowser" is-config="true" duration-ms="5585" started-at="2018-08-15T22:26:20Z" finished-at="2018-08-15T22:26:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getBrowser -->
-        <test-method status="PASS" signature="addingProducts()[pri:0, instance:op_Package.AddProductAndValidateDollarAmount@7f416310]" name="addingProducts" duration-ms="24810" started-at="2018-08-15T20:07:52Z" finished-at="2018-08-15T20:08:17Z">
+        <test-method status="PASS" signature="addingProducts()[pri:0, instance:op_Package.EnterShiipingContactInfo@140e5a13]" name="addingProducts" duration-ms="33125" started-at="2018-08-15T22:26:26Z" finished-at="2018-08-15T22:26:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addingProducts -->
+        <test-method status="PASS" signature="tierDown()[pri:0, instance:op_Package.EnterShiipingContactInfo@140e5a13]" name="tierDown" is-config="true" duration-ms="3070" started-at="2018-08-15T22:26:59Z" finished-at="2018-08-15T22:27:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tierDown -->
+      </class> <!-- op_Package.EnterShiipingContactInfo -->
+      <class name="op_Package.RemoveProduct">
+        <test-method status="PASS" signature="getBrowser()[pri:0, instance:op_Package.RemoveProduct@3439f68d]" name="getBrowser" is-config="true" duration-ms="5381" started-at="2018-08-15T22:27:02Z" finished-at="2018-08-15T22:27:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBrowser -->
+        <test-method status="PASS" signature="addingProducts()[pri:0, instance:op_Package.RemoveProduct@3439f68d]" name="addingProducts" duration-ms="28583" started-at="2018-08-15T22:27:07Z" finished-at="2018-08-15T22:27:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addingProducts -->
+        <test-method status="PASS" signature="tierDown()[pri:0, instance:op_Package.RemoveProduct@3439f68d]" name="tierDown" is-config="true" duration-ms="3248" started-at="2018-08-15T22:27:36Z" finished-at="2018-08-15T22:27:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tierDown -->
+      </class> <!-- op_Package.RemoveProduct -->
+      <class name="op_Package.AddProduct">
+        <test-method status="PASS" signature="getBrowser()[pri:0, instance:op_Package.AddProduct@2473b9ce]" name="getBrowser" is-config="true" duration-ms="7406" started-at="2018-08-15T22:25:13Z" finished-at="2018-08-15T22:25:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBrowser -->
+        <test-method status="PASS" signature="addingProducts()[pri:0, instance:op_Package.AddProduct@2473b9ce]" name="addingProducts" duration-ms="21656" started-at="2018-08-15T22:25:20Z" finished-at="2018-08-15T22:25:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addingProducts -->
+        <test-method status="PASS" signature="tierDown()[pri:0, instance:op_Package.AddProduct@2473b9ce]" name="tierDown" is-config="true" duration-ms="3346" started-at="2018-08-15T22:25:42Z" finished-at="2018-08-15T22:25:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tierDown -->
+      </class> <!-- op_Package.AddProduct -->
+      <class name="op_Package.AddProductAndValidateDollarAmount">
+        <test-method status="PASS" signature="getBrowser()[pri:0, instance:op_Package.AddProductAndValidateDollarAmount@60438a68]" name="getBrowser" is-config="true" duration-ms="5506" started-at="2018-08-15T22:25:45Z" finished-at="2018-08-15T22:25:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBrowser -->
+        <test-method status="PASS" signature="addingProducts()[pri:0, instance:op_Package.AddProductAndValidateDollarAmount@60438a68]" name="addingProducts" duration-ms="26087" started-at="2018-08-15T22:25:51Z" finished-at="2018-08-15T22:26:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addingProducts -->
+        <test-method status="PASS" signature="tierDown()[pri:0, instance:op_Package.AddProductAndValidateDollarAmount@60438a68]" name="tierDown" is-config="true" duration-ms="3207" started-at="2018-08-15T22:26:17Z" finished-at="2018-08-15T22:26:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tierDown -->
       </class> <!-- op_Package.AddProductAndValidateDollarAmount -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- TestOC -->
+  </suite> <!-- SuiteOC -->
 </testng-results>
