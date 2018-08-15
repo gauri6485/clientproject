@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SuiteOC]">
+  <test thread-count="5" name="TestOC(failed)">
+    <classes>
+      <class name="op_Package.DataFromDB">
+        <methods>
+          <include name="testing"/>
+        </methods>
+      </class> <!-- op_Package.DataFromDB -->
+    </classes>
+  </test> <!-- TestOC(failed) -->
+</suite> <!-- Failed suite [SuiteOC] -->

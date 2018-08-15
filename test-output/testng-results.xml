@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="31753" started-at="2018-08-15T20:07:45Z" finished-at="2018-08-15T20:08:17Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="31753" started-at="2018-08-15T20:07:45Z" finished-at="2018-08-15T20:08:17Z">
+      <class name="op_Package.AddProductAndValidateDollarAmount">
+        <test-method status="PASS" signature="getBrowser()[pri:0, instance:op_Package.AddProductAndValidateDollarAmount@7f416310]" name="getBrowser" is-config="true" duration-ms="6927" started-at="2018-08-15T20:07:45Z" finished-at="2018-08-15T20:07:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBrowser -->
+        <test-method status="PASS" signature="addingProducts()[pri:0, instance:op_Package.AddProductAndValidateDollarAmount@7f416310]" name="addingProducts" duration-ms="24810" started-at="2018-08-15T20:07:52Z" finished-at="2018-08-15T20:08:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addingProducts -->
+      </class> <!-- op_Package.AddProductAndValidateDollarAmount -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
