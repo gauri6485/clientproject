@@ -3,7 +3,7 @@
   <groupId>OptimusPrime</groupId>
   <artifactId>OptimusPrime</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-   <name>OptimusPrimeCellfire</name>
+   <name>23andme</name>
   <description>using Selenium and TestNg and Maven for Optimus Prime</description>
   <build>
     <sourceDirectory>src</sourceDirectory>

@@ -4,13 +4,9 @@
 <suite name="SuiteOC" preserve-order="true" parallel="false">
 
 	<test name="TestOC" preserve-order="true">
-	
-		<classes>	
-				
-			<class name="op_Package.AddProduct"/>
-		    <class name="op_Package.AddProductAndValidateDollarAmount"/>
-		    <class name="op_Package.EnterShiipingContactInfo"/>
-		    <class name="op_Package.RemoveProduct"/>
-		</classes>
+
+		<packages>
+			<package name="com.store.checkout" />
+		</packages>
 	</test>
 </suite>

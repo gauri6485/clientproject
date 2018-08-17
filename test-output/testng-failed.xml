@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="op_Package.LoginOptimusDataFromDataProviders">
+      <class name="com.store.checkout.AddProduct">
         <methods>
           <include name="getBrowser"/>
-          <include name="loginTest"/>
+          <include name="addingProducts"/>
         </methods>
-      </class> <!-- op_Package.LoginOptimusDataFromDataProviders -->
+      </class> <!-- com.store.checkout.AddProduct -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
