@@ -1,5 +1,6 @@
 # clientproject
 23AndMe-checkout experience
+Selenium Mavenand and TestNg project
 Step by Step instruction to how to install and run the test cases-
 
 1.	Follow below link having detail step by step instruction for setting up maven on you machine where you want to run the tets script –
