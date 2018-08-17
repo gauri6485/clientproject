@@ -28,9 +28,10 @@ Note – we can run our project multiple ways but as per the requirement we want
 Below are other possible options –
 We can run using testing command line
 We can run using eclipse 
-In case you are not able to access the github url please use below login credentials –
-Username- gauri6485
-Password -Mindtree@123
+In case you are not able to access the github url please let me know.
+
+Thanks
+
 
 
 
