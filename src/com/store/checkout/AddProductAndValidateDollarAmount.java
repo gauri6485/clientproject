@@ -32,7 +32,7 @@ public class AddProductAndValidateDollarAmount extends base {
 
 			// open the browser and launch 23andMe application
 			launchApplication();
-
+			// Instantiate home page -- Page00
 			Page_00_AddRemoveProductFirstPage p00 = new Page_00_AddRemoveProductFirstPage(driver);
 			p00.addAncestry();
 			GeneralMethods sy = new GeneralMethods();
@@ -43,7 +43,7 @@ public class AddProductAndValidateDollarAmount extends base {
 			countofancestry = Integer.valueOf(p00.getCountAncestry());
 			countofHealth = Integer.valueOf(p00.getCountHealth());
 			Sum_Product = countofancestry + countofHealth;
-			// System.out.println(Sum_Product);
+			
 			countofTotlProduct = "Total (" + String.valueOf(Sum_Product) + ")";
 
 			dollar_total = p00.getDollarValue();
@@ -51,6 +51,7 @@ public class AddProductAndValidateDollarAmount extends base {
 			// individaul count
 			p00.checkoutButtonOnPage();
 			sy.sync();
+			// Instantiate home page -- Page01
 			Page_01_OrderSummary p01 = new Page_01_OrderSummary(driver);
 			SoftAssert Assert = new SoftAssert();
 			Assert.assertTrue(p01.validateDollarAmonut(dollar_total));

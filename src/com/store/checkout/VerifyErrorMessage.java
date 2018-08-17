@@ -29,26 +29,22 @@ public class VerifyErrorMessage extends base {
 
 		try {
 
-		
+			// open the browser and launch 23andMe application 
 			launchApplication();
-			Thread.sleep(2000);
+			GeneralMethods sy = new GeneralMethods();
+			sy.sync();
 			Page_00_AddRemoveProductFirstPage p00 = new Page_00_AddRemoveProductFirstPage(driver);
 			p00.addAncestry();
-			Thread.sleep(2000);
-		    p00.addHealthy();
-		    GeneralMethods sy = new GeneralMethods();
 			sy.sync();
-			//p00.countTotal();
-			 
-		    p00.checkoutButtonOnPage();
+		    p00.addHealthy();
 		    sy.sync();
+			p00.checkoutButtonOnPage();
+		    sy.sync();
+		 // Instantiate home page -- Page02
 		    Page_02_ErrorMessage_OrderSummary p02= new Page_02_ErrorMessage_OrderSummary(driver);
-		   //p01.enterShippingDetails();
-		    //p01.enterContactInfo();
 		    p02.continueToShipping1();
 		    sy.sync();
-		    
-		   
+		    //Get expected error label for below fields
 		    String firstName_label = (prop.getFirstNameLabel());
 		    String lasttName_label = (prop.getLastNameLabel());
 		    String address_label = (prop.getAddressLabel());
@@ -56,7 +52,8 @@ public class VerifyErrorMessage extends base {
 		    String zip_label = (prop.getZipLabel());
 		    String email_label = (prop.getEmail());
 		    String phone_label = (prop.getPhoneLabel());
-		    
+		    //Validating the scenario where when user does not enter shipping information 
+		    //and clicked on the continue to shipping by mistake then system should give specific error messages
 		    SoftAssert Assert = new SoftAssert();
 		    Assert.assertTrue(p02.validateFirstNameError(firstName_label));
 		    Assert.assertTrue(p02.validateLasttNameError(lasttName_label));
@@ -74,12 +71,10 @@ public class VerifyErrorMessage extends base {
 
 			File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 			GeneralMethods fileName = new GeneralMethods();
-			//System.out.println(fileName.getCurrentDateTime());
-			fileNameWithDateTime = "addproduct" + "_" + fileName.getCurrentDateTime() + ".png";
-			FileUtils.copyFile(screenshotFile, new File("C:\\selenium_failedscreenshots\\" + fileNameWithDateTime));
+			System.out.println(fileName.getCurrentDateTime());
+			fileNameWithDateTime = Thread.currentThread().getStackTrace()[1].getMethodName() + "_" + fileName.getCurrentDateTime() + ".png";
+			FileUtils.copyFile(screenshotFile,new File(System.getProperty("user.dir") + "\\screenshots\\" + fileNameWithDateTime));
 
-			 FileUtils.copyFile(screenshotFile, new
-			 File("C:\\SoftwareTestingMaterial.png"));
 		}
 		System.out.println("Test Case Status is  --" + Status);
 	}
